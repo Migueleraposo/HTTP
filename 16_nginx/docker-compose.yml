@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx:1.21-alpine    
+    restart: always
+    ports:
+    - "8888:80" 
+    volumes:
+    - ./htnl:/usr/share/nginx/htnl:ro
